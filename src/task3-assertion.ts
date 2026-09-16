@@ -1,0 +1,19 @@
+// Тип конфигурации приложения
+export type AppConfig = {
+  apiUrl: string;
+  timeout: number;
+};
+
+// Напишите Assertion Function assertValidConfig
+// Если данные не соответствуют AppConfig - бросить Error("Invalid config")
+// Используйте синтаксис: asserts data is AppConfig
+export function assertValidConfig(data: unknown): asserts data is AppConfig {
+  // Напишите код здесь
+}
+
+// Функция инициализации.
+// Сначала вызывает assertValidConfig(config).
+// Если проверка прошла - вернуть "API: <apiUrl>, Timeout: <timeout>"
+export function initApp(config: unknown): string {
+  // Напишите код здесь
+}

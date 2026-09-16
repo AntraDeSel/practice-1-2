@@ -1,0 +1,23 @@
+// 1. Сужение через typeof
+// Если value строка - вернуть "Строка: <value>", если число - "Число: <value>", 
+// если boolean - "Логическое: <value>"
+export function describeValue(value: string | number | boolean): string {
+  // Напишите код здесь
+}
+
+// 2. Сужение через instanceof
+// Если error это Error - вернуть error.message
+// Иначе вернуть "Ошибка: <error>" (приведя error к строке)
+export function formatError(error: Error | string): string {
+  // Напишите код здесь
+}
+
+// 3. Сужение через оператор in
+type Fish = { swim: () => string };
+type Bird = { fly: () => string };
+
+// Если у animal есть метод swim - вернуть "Плывет", иначе "Летит"
+// Подсказка: используйте оператор "in" (например, "swim" in animal)
+export function moveAnimal(animal: Fish | Bird): string {
+  // Напишите код здесь
+}
